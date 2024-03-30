@@ -22,3 +22,47 @@ button {
     background-color: #27233A;
     color: #F2F7F2;
 }
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease; /* Add transition for smooth slide effect */
+}
+
+.carousel-inner img {
+    flex: 0 0 auto; /* Prevent images from stretching */
+    max-width: 100%; /* Ensure images occupy entire width of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing between images */
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    color: #ccc;
+}
