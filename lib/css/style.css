@@ -1,0 +1,24 @@
+nav {
+    background-color: #27233A;
+}
+
+body {
+    padding-top: 60px;
+    background-color: #F2F7F2;
+}
+
+section {
+    margin: 30px;
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.search-container {
+    text-align: center; /* Center-align the content within the container */
+}
+button {
+    background-color: #27233A;
+    color: #F2F7F2;
+}
